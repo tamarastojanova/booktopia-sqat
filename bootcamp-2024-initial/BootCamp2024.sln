@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootCamp2024.Api", "BootCamp2024.Api\BootCamp2024.Api.csproj", "{B4E04D09-947E-4080-AB74-32AECAB30FDB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7E602198-EA62-437E-9B69-A61C25843F13} = {7E602198-EA62-437E-9B69-A61C25843F13}
+		{F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A} = {F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootCamp2024.Service", "BootCamp2024.Service\BootCamp2024.Service.csproj", "{7E602198-EA62-437E-9B69-A61C25843F13}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A} = {F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A}
+		{FD3BC8A7-0DFE-427D-9E07-51BA254D5C8B} = {FD3BC8A7-0DFE-427D-9E07-51BA254D5C8B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootCamp2024.Repository", "BootCamp2024.Repository\BootCamp2024.Repository.csproj", "{FD3BC8A7-0DFE-427D-9E07-51BA254D5C8B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A} = {F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootCamp2024.Domain", "BootCamp2024.Domain\BootCamp2024.Domain.csproj", "{F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4E04D09-947E-4080-AB74-32AECAB30FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4E04D09-947E-4080-AB74-32AECAB30FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4E04D09-947E-4080-AB74-32AECAB30FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4E04D09-947E-4080-AB74-32AECAB30FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E602198-EA62-437E-9B69-A61C25843F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E602198-EA62-437E-9B69-A61C25843F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E602198-EA62-437E-9B69-A61C25843F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E602198-EA62-437E-9B69-A61C25843F13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD3BC8A7-0DFE-427D-9E07-51BA254D5C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3BC8A7-0DFE-427D-9E07-51BA254D5C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3BC8A7-0DFE-427D-9E07-51BA254D5C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3BC8A7-0DFE-427D-9E07-51BA254D5C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F131D1BE-4EF4-4B3E-A82E-1E2A0C157D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7432D4E-2D05-46B5-8C5C-6D3EC4FC8E4F}
+	EndGlobalSection
+EndGlobal
