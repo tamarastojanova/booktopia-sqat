@@ -1,9 +1,12 @@
 ﻿using BootCamp2024.Domain.Models;
 using BootCamp2024.Repository.Repositories.Interface;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 namespace BootCamp2024.Repository.Repositories.Implementation
 {
     public class BooksRepository : RepositoryBase<Book>, IBooksRepository
     {
+        [ExcludeFromCodeCoverage]
         static BooksRepository()
         {
             Data.AddRange(_books);
@@ -19,7 +22,22 @@ namespace BootCamp2024.Repository.Repositories.Implementation
             new Book { Id = 6, AuthorId = 4, Title = "Tycoon", YearPublished = 2011 },
             new Book { Id = 7, AuthorId = 4, Title = "Piranhas", YearPublished = 1992 }
         };
-        public IEnumerable<Book> GetAllByAuthor(int authorId)
+
+		[ExcludeFromCodeCoverage]
+		public static void ResetBooks()
+		{
+			Data.Clear();
+			Data.AddRange(_books);
+		}
+
+		[ExcludeFromCodeCoverage]
+		public static void SetBooks(List<Book> books)
+		{
+			Data.Clear();
+			Data.AddRange(books);
+		}
+
+		public IEnumerable<Book> GetAllByAuthor(int authorId)
         {
             return Data.Where(x => x.AuthorId == authorId);
         }

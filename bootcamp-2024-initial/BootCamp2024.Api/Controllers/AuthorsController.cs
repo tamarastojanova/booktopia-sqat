@@ -69,7 +69,7 @@ namespace BootCamp2024.Api.Controllers
                 return BadRequest(new { exception.Message });
             }
 			_authorsService.Create(author);
-            return Ok();
+            return Ok(author);
         }
 
         [HttpPut("{id}")]
@@ -101,7 +101,7 @@ namespace BootCamp2024.Api.Controllers
             }
 			//author.Id = id;
 			_authorsService.Update(author, id);
-            return Ok();
+            return Ok(author);
         }
 
         [HttpDelete("{id}")]
@@ -120,7 +120,7 @@ namespace BootCamp2024.Api.Controllers
                 return NotFound(new { Message = $"Author with ID {id} not found." });
             }
 			_authorsService.Delete(id);
-            return Ok();
+            return Ok(existing);
         }
     }
 }

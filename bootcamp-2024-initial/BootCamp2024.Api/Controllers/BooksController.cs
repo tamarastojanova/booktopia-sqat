@@ -76,7 +76,7 @@ namespace BootCamp2024.Api.Controllers
             }
 			//book.AuthorId = authorId;
 			_booksService.Create(book);
-            return Ok();
+            return Ok(book);
         }
 
         [HttpPut("{bookId}")]
@@ -113,7 +113,7 @@ namespace BootCamp2024.Api.Controllers
 			//book.Id = bookId;
 			//book.AuthorId = authorId;
 			_booksService.Update(book, bookId);
-            return Ok();
+            return Ok(book);
         }
 
         [HttpDelete("{bookId}")]
@@ -136,7 +136,7 @@ namespace BootCamp2024.Api.Controllers
                 return BadRequest(new { Message = $"There is no such a book with id {bookId} from the author with id {authorId}" });
             }
 			_booksService.Delete(bookId);
-            return Ok();
+            return Ok(existing);
         }
     }
 }
