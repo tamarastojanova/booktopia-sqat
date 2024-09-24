@@ -12,11 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -35,17 +37,50 @@ h1 {
 }
 
 nav {
-  width: 90vw;
+  position: fixed; /* Changed from relative to fixed to ensure it stays at the top */
+  width: 100%;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1em 5%;
+  box-sizing: border-box;
+  z-index: 10; /* Ensure navbar stays above cover */
 }
 
-.title{
-  font-size: 36px;
-  align-self: center;
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 60px; /* Set a fixed height for the navbar */
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%; /* Adjust padding if needed */
+  background-color: #ffffff; /* White background for the navbar */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a subtle 3D effect */
+  z-index: 10; /* Ensure navbar stays above other content */
 }
-.home-image{
+
+/* Ensure navbar items are styled properly */
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.home-image {
   width: 100%;
   height: auto;
   position: absolute;
@@ -63,9 +98,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -76,9 +113,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }

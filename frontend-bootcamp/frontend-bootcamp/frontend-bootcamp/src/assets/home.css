@@ -1,0 +1,52 @@
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.cover {
+    position: relative;
+    background: url('cover-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 110vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -18%;
+    z-index: 1; /* Ensure the cover is behind the navbar */
+}
+
+.cover-text {
+    text-align: center;
+    z-index: 2; /* Ensure the text is above the cover */
+}
+
+.cover-text h1 {
+    font-size: 3.2em; /* Adjust size if needed */
+    font-weight: 700; /* Make the text bolder */
+    margin: 0; /* Remove default margin */
+}
+
+.cover-text p {
+    font-size: 1.2em; /* Adjust size if needed */
+    margin: 1em 0; /* Add margin for spacing */
+}
+
+.btn-get-started {
+    background-color: #ff6347;
+    border: none;
+    width: 200px; /* Set a fixed width */
+    padding: 10px 20px; /* Adjust padding to your preference */
+    text-align: center; /* Center text within the button */
+    display: inline-block; /* Ensure it respects width */
+    font-size: 1em; /* Adjust font size if needed */
+    font-weight: 500; /* Ensure text is properly visible */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.btn-get-started:hover {
+    background-color: #e55342;
+}

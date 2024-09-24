@@ -14,22 +14,22 @@ function App() {
   return (
     <>
     <Router>
-      <nav>
-        <span className='brand'>
-        <span className='title'><strong>Library</strong></span>
-        </span>
-        <span className='nav-links'>
-        <Link path="/" to="/">
-        <button>
-          Home
-        </button>
-        </Link>
-        <Link path="/authors" to="/authors">
-        <button>
-          Authors
-        </button>
-        </Link>
-        </span>
+      <nav className="navbar">
+        <div className='brand'>
+          <span className='title'><strong>Booktopia</strong></span>
+        </div>
+        <div className='nav-links'>
+          <Link path="/" to="/">
+            <button id='home-button'>
+              Home
+            </button>
+          </Link>
+          <Link path="/authors" to="/authors">
+            <button id='authors-button'>
+              Authors
+            </button>
+          </Link>
+        </div>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,19 +1,27 @@
-.author-img{
-    width: 300px;
-    height: 300px;
+.author-img {
+    width: 100%; /* Make the image take full width of the card */
+    height: 300px; /* Set a fixed height for consistency */
     border-radius: 30px 30px 0px 0px;
-    margin: 0px;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
 }
-.card-group{
+
+.card-group {
     margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns per row */
+    gap: 20px; /* Space between items */
 }
-.card{
-    width: 300px;
+
+.card-group-books {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if there's no space */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Optional: space between cards */
+    margin-top: 20px; /* Optional: space above the group */
+}
+
+.card {
+    width: 100%; /* Full width within the grid item */
     border-radius: 30px;
     box-shadow: 0px 0px 10px 0px #000000;
     padding: 0 0 20px 0;
@@ -23,61 +31,61 @@
     justify-content: start;
     background-color: #333;
     color: #eee;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add space at the bottom for better spacing */
 }
-.btn-group{
+
+.btn-group {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
 }
-.btn{
+
+.btn {
     width: 80px;
     height: 40px;
-    font-size: 20px;
+    font-size: 16px; /* Adjust font size for better fit */
     padding: 0px;
     cursor: pointer;
     color: #eee;
 }
-.btn:hover{
+
+.btn:hover {
     border-color: #000;
 }
-.delete-btn{
+
+.delete-btn {
     border-radius: 0 5px 5px 0;
     border-color: #500;
     background-color: #500;
 }
-.delete-btn:hover{
+
+.delete-btn:hover {
     background-color: #b66;
 }
-.edit-btn{
+
+.edit-btn {
     border-radius: 0;
     border-color: #005;
     background-color: #005;
 }
-.edit-btn:hover{
+
+.edit-btn:hover {
     background-color: #88f;
 }
-.view-btn{
+
+.view-btn {
     border-radius: 5px 0 0 5px;
     background-color: #050;
     border-color: #050;
 }
-.view-btn:hover{
+
+.view-btn:hover {
     background-color: #090;
 }
-.book-card{
-    width: 30%;
-    box-shadow: 0px 0px 10px 0px #000000;
-    margin: 5px;
-    padding: 0 0 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    background-color: #353535;
-    color: #eee;
-}
-.add-btn{
+
+.add-btn {
     width: 300px;
     height: 40px;
     font-size: 20px;
@@ -88,6 +96,7 @@
     border-color: #050;
     background-color: #050;
 }
-.add-btn:hover{
+
+.add-btn:hover {
     background-color: #090;
 }
