@@ -1,0 +1,17 @@
+{
+  "stryker-config": {
+    "reporters": [
+      "html"
+    ],
+    "thresholds": {
+      "high": 80,
+      "low": 60,
+      "break": 50
+    },
+    "mutation-level": "Complete",
+    "test-projects": [
+      "../BootCamp2024.UnitTests.Extensions/BootCamp2024.UnitTests.Extensions.csproj"
+    ],
+    "disable-mix-mutants": false
+  }
+}

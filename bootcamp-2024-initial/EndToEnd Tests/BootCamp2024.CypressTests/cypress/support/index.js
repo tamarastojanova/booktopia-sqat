@@ -1,0 +1,1 @@
+import 'cypress-slow-down/commands';
